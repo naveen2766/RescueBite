@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log In</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/20c5629a29.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ecocuisine - Food Waste Management System</title>
+    <link rel="stylesheet" type="text/css" href="restaurantsigninpage.css" />
+  </head>
+  <body>
+    <div class="signinpage">
+      
+      <div class="p-2">
+        <div id="logoEco"><img src="./files/logo.png" height="60" alt="">
+         <label class="mb-5" style="font-size: 24px;">RescueBite</label></div>
+        <div style="display: flex; justify-content: space-around;" class="mb-2">
+       </div>
+       
+        <div id="restarauntLogin" class="">
+        <p style="color:white;">Are you not a restaurant user but still want to donate food? <a href="register.html">click here</a></p>
+        <p style="color:green;">Please use your account to make a food donation request if you're from a restaurant</p>
+          <h1 class="loginHeading">Restaurant Log In</h1>
+          <p id="login-error" style="color:red;font-weight:700;"></p>
+          <form id="restaraundLoginForm">
+          <div id="errorMsg" style="color: red;"></div>
+            <div style="margin: 10px">
+              <label>Username</label>
+              <input
+                id="RestaurantuserName"
+                type="text"
+                placeholder="Enter username"
+                name="username"
+              />
+            </div>
+            <div style="margin-left: 2vw">
+              <label class="mr-2">Password</label>
+              <input
+                type="password"
+                placeholder="Enter password"
+                name="password"
+                id="RestaurantpassWord"
+                class="ml-1"
+              />
+              <p style="color:red;font-size: 16px;text-align: right;" id="Resmessage"></p>
+            </div>
+            <div class="buttons">
+              <button class="btn btn-dark" id="ResbackBtn">Back</button>
+              <input class="btn btn-success" type="submit" id="RessubmitBtn" value="Sign In">
+            </div>
+            <div style="display: flex;justify-content: space-between;margin-left: 2vw;">
+              <a href="registration.html" style="text-decoration: underline;" class="mt-3">Don't have an Account</a>
+              <a href="adminLogin.html" id="gotoAdminLogin" style="text-decoration: underline;color: violet;" class="mt-3">go to Admin Login Page</a>
+          </div>
+            <hr style="height: 1px;background-color:white;"/>
+          </form>
+          <!--div class="m-1 signinMailBox">
+            <i class="fab fa-google mt-1" style="font-size: 24px;"></i>
+            <h5 class="mt-1" style="font-weight: 700;">Continue With Google</h5>
+          </div>
+          <div class="m-1 signinMailBox">
+            <i class="fab fa-windows fa-rotate-180 mb-1" style="font-size: 24px;"></i>
+            <h5 class="mt-1" style="font-weight: 700;">Continue With Microsoft</h5>
+          </div>
+          <div class="m-1 signinMailBox">
+            <i class="fas fa-phone fa-rotate-90"></i>
+            <h5 class="mt-1" style="font-weight: 700;">Continue With Mobile</h5>
+          </div-->
+        </div>
+      </div>
+    </div>
+    <!-- <JavaScript> -->
+      <script src="restsignin.js"></script>
+  </body>
+</html>

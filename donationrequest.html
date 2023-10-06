@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Requests</title>
+  <link rel="stylesheet" href="donationrequest.css">
+  <style>
+  	.content{
+	    
+	    min-height:100vh;
+	    margin-bottom:0px;
+		background-image:linear-gradient(45deg,rgba(245,70,66, 0.75),rgba(8,83,156, 0.75));
+	    display: flex;
+	    flex-wrap: wrap;
+	  gap: 20px;
+	} 
+
+	nav{
+	    width: 100%;
+	    position: ;
+	    backdrop-filter: blur(10px);
+	    background-image: linear-gradient(rgba(34, 9, 133, 0.2),rgba(11, 8, 24, 0.3));
+	    box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-around;
+	}
+
+	nav .logo{
+	    width: 50px;
+	    height: 50px;
+	    margin-left: 8%;
+	}
+
+	nav ul li{
+	    list-style: none;
+	    display: inline-block;
+	    margin-left: 40px;
+	}
+
+	.navbar{
+	    display: flex;
+	    margin-right: 4vh;
+	    padding: 15px;
+	}
+
+	.navbar a{
+	    color: white;
+	    font-size: 18px;
+	    padding: 10px 22px;
+	    border-radius: 4px;
+	    font-weight: 500;   
+	    text-decoration: none;
+	    transition: ease 0.40s;
+	}
+
+	.navbar a:hover,.navbar a.active{
+
+	    color: black;
+	    background: white;
+	    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	    border-radius: 5px;
+	    
+	}
+
+	nav ul li a{
+	    text-decoration: none;
+	    color: rgb(255, 255, 255);
+	    font-size: 17px;
+	}
+	#donationRequests div{
+		background-image:linear-gradient(to right,rgba(245,70,66, 0.75),rgba(8,83,156, 0.75));
+	}
+	#donationRequests button{
+		background-color:none;
+	}
+	.heading{
+		color:orange;
+	}
+	.container div:hover{
+		transform: scale(1.02);
+		box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+	}
+  </style>
+</head>
+<body>
+	 <div class="content" id="home"> 
+		<nav>
+		     <a href="index.html"><img src="./files/logo.png" class="logo" alt="Logo" title="FoodYard"></a>
+		    <a href="index.html"><h1 style="color:orange;">RescueBite</h1></a>
+		    <ul class="navbar navbar1">
+		        <li>
+		            <a href="index.html">Home</a>
+		        </li>
+		    </ul>
+		</nav>
+  <div class="container" style="min-width: 900px;">
+    <h1 class="heading">Donation Requests</h1>
+    <div id="donationRequests"></div>
+  </div>
+  <script src="donationrequest.js"></script>
+</body>
+</html>
+

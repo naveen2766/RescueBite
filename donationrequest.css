@@ -1,0 +1,97 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+.container {
+  min-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.donation-record {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.donation-record p {
+  margin: 5px 0;
+}
+
+.donation-record button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.donation-record button:hover {
+  background-color: #45a049;
+}
+
+.donation-record button[data-status="accepted"] {
+  background-color: #009688;
+}
+
+.donation-record button[data-status="collected"] {
+  background-color: #607d8b;
+}
+
+.donation-record button[data-status="deleted"] {
+  background-color: #f44336;
+}
+
+/* Styling for the status labels */
+.status-label {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.status-accepted {
+  color: #009688;
+  background-color: #e0f2f1;
+}
+
+.status-collected {
+  color: #607d8b;
+  background-color: #eceff1;
+}
+
+.status-deleted {
+  color: #f44336;
+  background-color: #ffebee;
+}
+
+/* Styling for the "Delete" confirmation message */
+.delete-confirmation {
+  color: #f44336;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  display: none;
+}
+
